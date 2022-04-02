@@ -46,11 +46,12 @@ export const CardPicture = styled.a`
 `;
 
 export const CardInfo = styled.div`
-	height: auto;	
+	height: auto;
+	width: 100%;
 	display: flex;
 	flex-direction: row !important;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	margin-bottom: 0.5rem;
 
 	a {
@@ -62,7 +63,7 @@ export const CardInfo = styled.div`
 	}
 
 	div {
-		margin-right: 10px;
+		margin-right: 0px;
 	}
 
 	span {
