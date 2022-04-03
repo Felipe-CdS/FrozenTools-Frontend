@@ -12,7 +12,7 @@ class TopBar extends React.Component {
 	}
 
 	async componentDidMount(){
-		let api_string = "http://frosttools.herokuapp.com/eth-info";
+		let api_string = "https://frosttools.herokuapp.com/eth-info";
         let response = await axios.get(api_string).then((resp) => resp.data);
 		console.log(response);
 		this.setState({eth_price: response.eth_price});
