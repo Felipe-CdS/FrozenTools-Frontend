@@ -24,14 +24,14 @@ class Collections extends React.Component {
             let collection_data = response[j]; 
             holder.push(
                 <CollectionCard
-                    name={collection_data.name}
-                    img_url={collection_data.image_url}
-                    opensea_slug={collection_data.opensea_slug}
-                    twitter_username={collection_data.twitter_username ? collection_data.twitter_username : ""}
-                    supply="-----"
-                    holders="-----"
-                    floor="-----"
-                    volume="-----"
+                    name             = {collection_data.name}
+                    img_url          = {collection_data.image_url}
+                    opensea_slug     = {collection_data.opensea_slug}
+                    twitter_username = {collection_data.twitter_username  ? collection_data.twitter_username  : ""}
+                    supply           = {collection_data.total_supply      ? collection_data.total_supply      : "-----"}
+                    holders          = {collection_data.holders           ? collection_data.holders           : "-----"}
+                    floor            = {collection_data.floor_price       ? collection_data.floor_price       : "-----"}
+                    volume           = {collection_data.total_volume      ? collection_data.total_volume      : "-----"}
                 />
             );
         }
